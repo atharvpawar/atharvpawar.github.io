@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
 						<h1>Atharv Pawar</h1>
 						<!-- <p>Just another free, fully responsive site template<br />
 						built by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>.</p> -->
@@ -31,7 +31,7 @@
 							<li><a href="#intro" class="active">Introduction</a></li>
 							<li><a href="#about">About</a></li>
 							<li><a href="#portfolio">Portfolio</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#footer">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -63,95 +63,128 @@
 								<header class="major">
 									<h2>About Me</h2>
 								</header>
-								<ul class="features">
+								<ul class="features" width="calc(45%-2em)">
 									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon solid major style5 fa-graduation-cap"></span>
+										<h3>Education</h3>
+										<p>I graduated from the Indian Institute of Technology, Bombay with a Bachelor's in Electrical Engineering.
+											I am currently pursuing my Master's at the University of Michigan, Ann Arbor, majoring in Electrical and Computer Engineering
+											with a focus on Signal and Image Processing and Machine Learning. Notable classes taken in Michigan include: Machine Learning,
+											Matrix Methods for Signal Processing and Machine Learning, Computer Architecture (EECS 470), Natural Language Processing,
+											Machine Learning/Data Science Lab.
+										</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon solid major style3 fa-cogs"></span>
+										<h3>Skills</h3>
+										<div id="programming-langs">
+										<b>Programming Languages</b> <br>
+										Python <br>
+										C, C++ <br>
+										Julia <br>
+										MATLAB <br>
+										<b>Machine Learning Libraries</b> <br>
+										Pytorch <br>
+										Pandas <br>
+										Scikit-learn <br>
+										NumPy <br>
+										HuggingFace <br>
+										<b>Tools</b> <br>
+										AWS Cloud Computing <br>
+										Docker
+										</div>
 									</li>
 								</ul>
-								<footer class="major">
+								<!-- <footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
-								</footer>
+								</footer> -->
 							</section>
 
 						<!-- Second Section -->
 							<section id="portfolio" class="main special">
 								<header class="major">
 									<h2>Portfolio</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<p>I have a mix of expertise in machine learning, computer vision as well as computer architecture. <br>
+										Here are a few of my key projects.
+									</p>
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
+								<div class="row">
+									<div class="col-6 col-6-medium col-12-small">
+										<article class="box style2">
+											<span class="image featured"><img src="images/trailerize.png"/></span>
+											<h3><a href="https://trailerize.herokuapp.com/">Trailerize</a></h3>
+											<p>
+												This was a project I did for the course EECS 605 Data Science and Machine Learning Lab. I created a React App that generates
+												a short summary or a trailer for the input video. The app's backend was hosted on Amazon's AWS Cloud Service and deployed
+												on an EC2 instance. The video is broken down into frames on the server, and then individual Lambda instances are triggered
+												for every frame in the video that process the frame and generate a score for each frame. Then all the frames with a score above
+												a certain threshold get collated into the final summary video and is made available for viewing. The demo website can be found
+												<a href="https://trailerize.herokuapp.com/">here</a>. This project gave me valuable experience in cloud service deployment, Javascript
+												(React App), HTML, CSS, Python requests library, Amazon's AWS infrastructure as well reinforced my knowledge of Pytorch and Python.
+											</p>
+										</article>
+									</div>
+									<div class="col-6 col-6-medium col-12-small">
+										<article class="box style2">
+											<span class="image featured"><img src="images/nlp_presentation.png"/></span>
+											<h3>BERT Models for Conversation Entailment</h3>
+											<p>
+												I did this project for the course EECS 595 Natural Language Processing. Textual entailment is a common task for training
+												NLP models. The SLED Lab of University of Michigan had developed a unique <a href="https://huggingface.co/datasets/sled-umich/Conversation-Entailment">dataset</a>
+												where the text was natural human conversation. I took inspiration from the <a href="https://openreview.net/forum?id=rkeJRhNYDH">TabFact paper</a>
+												to compare the performance of the base BERT model and RoBERTa model on the dataset using two different representations of the data:
+												the first "Para" approach where the conversations are written as directly quoted speech,
+												and the second "KeyValue" approach where the conversations are written using
+												speaker-dialogue pairs separated by a colon. I utilized the HuggingFace library for my experiments and found that
+												for both models, the "KeyValue" representation gave the best accuracy, with the RoBERTa model achieving the best
+												overall accuracy of 64.04%.
+											</p>
+										</article>
+									</div>
+									<div class="col-6 col-6-medium col-12-small">
+										<article class="box style2">
+											<span class="image featured"><img src="images/cotuning_Pipeline.png"/></span>
+											<h3><a href="https://github.com/tondakshay/cotuning">Co-tuning for Transfer Learning</a></h3>
+											<p>
+												This was a project I did for the course EECS 545 Machine Learning. We wanted to test the effectiveness of a cutting edge
+												transfer learning technique, <a href="https://papers.nips.cc/paper/2020/file/c8067ad1937f728f51288b3eb986afaa-Paper.pdf">co-tuning</a>,
+												on a relatively unexplored dataset, which was the
+												<a href="http://tacodataset.org/">TACO trash dataset</a>. Co-tuning aims to learn a relationship between the categories
+												of two different datasets, and use it along with a pre-trained model on one dataset to supervise the training of a model
+												on the second dataset. We used a Resnet50 backbone trained on ImageNet and transferred it onto the TACO dataset.
+												This was my first experience getting my hands dirty with Pytorch, which was the framework we used.
+												I learned about the training flow with Pytorch, as well as how to write a DataLoader for custom datasets.
+											</p>
+										</article>
+									</div>
+									<div class="col-6 col-6-medium col-12-small">
+										<article class="box style2">
+											<span class="image featured"><img src="images/eecs470_Highlvl.png"/></span>
+											<h3>N-way Superscalar Out-of-Order R10K Processor</h3>
+											<p>
+												This was a project I did for the course EECS 470 Computer Architecture. We implemented an R10K style out-of-order machine using
+												the Verilog Hardware description language. In order to boost the performance of the processor, we included a prefetcher unit,
+												instruction and data caches, a load-store queue, a branch predictor and a branch target buffer. This project gave me a lot of useful
+												insight into the low level design and architecture of computer processors, and sparked an interest in the possibility of designing
+												hardware optimized machine learning systems.
+											</p>
+										</article>
+									</div>
+							    </div>
+								<!-- <footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>
 									</ul>
-								</footer>
+								</footer> -->
 							</section>
 
-						<!-- Get Started -->
-							<section id="contact" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<!--
-						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						-->
 						<section>
 							<h2>Contact</h2>
 							<!--
@@ -174,7 +207,7 @@
 								<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright"><!--&copy; Untitled.--> Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
